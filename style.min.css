@@ -1,0 +1,89 @@
+#skill {
+  width: 100vw;
+  min-height: 100vh;
+  letter-spacing: 2px;
+}
+#skill #skill-content {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 50px 100px 60px 100px;
+  position: relative;
+}
+#skill #skill-content .skill-box {
+  width: 12vw;
+  height: 150px;
+  margin: 1vh 1vw;
+  color: #fdfdfd;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  filter: saturate(0) contrast(1.7);
+  transition: 0.75s ease-in-out;
+}
+#skill #skill-content .skill-box.no-contrast {
+  filter: saturate(0) contrast(1) brightness(2);
+}
+#skill #skill-content .skill-box.more-contrast {
+  filter: saturate(0) contrast(2) brightness(1);
+}
+#skill #skill-content .skill-box .skill-logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+#skill #skill-content .skill-box .skill-logo-wrapper svg {
+  transition: 0.75s cubic-bezier(0.2, 0.01, 0, 0.99);
+  width: 40%;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-dasharray: 5000;
+  stroke-dashoffset: 5000;
+}
+#skill #skill-content .skill-box .skill-logo-wrapper svg path,
+#skill #skill-content .skill-box .skill-logo-wrapper svg circle {
+  transition: 2.5s ease;
+}
+#skill #skill-content .skill-box .skill-logo-wrapper svg.animate-svg {
+  stroke-dashoffset: 0;
+}
+#skill #skill-content .skill-box .skill-logo-wrapper svg.wideimg {
+  width: 45%;
+}
+#skill #skill-content .skill-box .skill-text-wrapper {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+#skill #skill-content .skill-box .skill-text-wrapper p {
+  font-family: "Oswald";
+  font-size: 1.5vw;
+  font-weight: 600;
+}
+#skill #skill-content .skill-box .skill-text-wrapper span {
+  font-family: "Oswald";
+  font-size: 1.2vw;
+  font-weight: 200;
+}
+#skill #skill-content .skill-box:hover {
+  filter: saturate(0.85) contrast(1);
+}
+#skill #skill-content .skill-box:hover svg {
+  transform: scale(1.3);
+}
+#skill #skill-content #skill-svg {
+  position: absolute;
+  left: -10%;
+  bottom: 10%;
+  transform: rotate(-90deg) scale(0.4);
+}

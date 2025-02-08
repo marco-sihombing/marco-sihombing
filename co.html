@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="contact">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2 data-aos="fade-up">Contact Me!</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <form id="frm_cantact">
+              <div class="mb-3" data-aos="fade-right">
+                <label for="fullname" class="form-label"> Name </label>
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  id="name"
+                  aria-describedby="name"
+                  required
+                />
+              </div>
+
+              <div class="mb-3" data-aos="fade-left">
+                <label for="email" class="form-label"> Email </label>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="email"
+                  required
+                />
+              </div>
+
+              <div class="mb-3" data-aos="fade-right">
+                <label for="message" class="form-label"> Message </label>
+                <textarea
+                  class="form-control"
+                  name="message"
+                  id="message"
+                  rows="3"
+                  required
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="btn btn-primary"
+                id="btn_submit"
+                data-aos="fade-up"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script>
+      // Load the EmailJS SDK and initialize your user_id
+      (function () {
+        emailjs.init("8HkiXj7a37uUsiNhV");
+      })();
+
+      // Handle the form submission
+      $("#frm_cantact").submit(function (e) {
+        e.preventDefault(); // Prevent the default behavior of the form
+
+        // Get the form data
+        var name = $("#name").val();
+        var email = $("#email").val();
+        var message = $("#message").val();
+
+        // Validate the form data
+        if (name == "" || email == "" || message == "") {
+          alert("Please fill in all the fields");
+          return;
+        }
+
+        // Send an email using EmailJS service
+        emailjs
+          .send("service_rxaj1mb", "service_rxaj1mb", {
+            from_name: name,
+            from_email: email,
+            message: message,
+          })
+          .then(
+            function (response) {
+              // Email sent successfully
+              alert("Your message has been sent. I will contact you soon.");
+              // Clear the form fields
+              $("#name").val("");
+              $("#email").val("");
+              $("#message").val("");
+            },
+            function (error) {
+              // Email failed to send
+              alert("Sorry, something went wrong. Please try again later.");
+            }
+          );
+      });
+    </script>
+    </form>
+  </body>
+</html>
