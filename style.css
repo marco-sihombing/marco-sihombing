@@ -1206,71 +1206,167 @@ section {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+/* Footer Styling */
 #footer {
-  background: #f7f8f9;
-  color: #45505b;
+  background: #34495e;
+  color: #ecf0f1;
   font-size: 14px;
   text-align: center;
-  padding: 30px 0;
-}
-
-#footer h3 {
-  font-size: 36px;
-  font-weight: 700;
+  padding: 40px 0;
   position: relative;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Animasi Fade-in Up */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Styling H3 dengan efek glow */
+#footer h3 {
+  font-size: 2.2rem;
+  font-weight: 600;
   font-family: "Poppins", sans-serif;
-  padding: 0;
-  margin: 0 0 15px 0;
+  margin-bottom: 10px;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5); /* Efek glow */
+  animation: textGlow 2s ease-in-out infinite alternate;
 }
 
+@keyframes textGlow {
+  from {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  }
+  to {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+  }
+}
+
+/* Styling Paragraf */
 #footer p {
-  font-size: 15;
+  font-size: 1.2rem;
   font-style: italic;
-  padding: 0;
-  margin: 0 0 40px 0;
+  margin-bottom: 30px;
+  color: #bdc3c7;
+  opacity: 0;
+  animation: fadeInText 1.5s ease-in-out 0.5s forwards;
 }
 
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Social Links */
 #footer .social-links {
-  margin: 0 0 40px 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
 }
 
 #footer .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #0563bb;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
   color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  animation: pulseEffect 2s infinite;
+}
+
+/* Efek pulse untuk ikon sosial */
+@keyframes pulseEffect {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+  }
 }
 
 #footer .social-links a:hover {
-  background: #0678e3;
-  color: #fff;
-  text-decoration: none;
+  background: #3498db;
+  transform: translateY(-7px);
+  box-shadow: 0 5px 15px rgba(52, 152, 219, 0.5);
 }
 
-#footer .copyright {
-  margin: 0 0 5px 0;
-}
-
+/* Copyright & Credits */
+#footer .copyright,
 #footer .credits {
-  font-size: 13px;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  color: #95a5a6;
 }
 
-/*
-
- */
-.jumbotron {
-  padding-top: 6rem;
-  background-color: #e2edff;
+/* Efek ketik otomatis */
+.typewriter {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid white;
+  animation: typing 2.5s steps(30, end), blinkCursor 0.6s infinite;
 }
 
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinkCursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Media Query untuk Responsivitas */
+@media (max-width: 768px) {
+  #footer {
+    padding: 30px 20px;
+  }
+
+  #footer h3 {
+    font-size: 1.8rem;
+  }
+
+  #footer p {
+    font-size: 1rem;
+  }
+
+  #footer .social-links {
+    gap: 8px;
+  }
+
+  #footer .social-links a {
+    font-size: 16px;
+    width: 38px;
+    height: 38px;
+  }
+}
 /*
 #projects {
   background-color: #e2edff;

@@ -108,42 +108,43 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-
     <script>
       // Cegah klik kanan
       document.addEventListener("contextmenu", function (e) {
         e.preventDefault();
-        alert('Klik kanan tidak diizinkan!'); // Optional: Berikan pesan
+        alert("Klik kanan tidak diizinkan!"); // Optional: Berikan pesan
       });
-    
+
       // Cegah F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U, Ctrl+S, Ctrl+P
       document.addEventListener("keydown", function (e) {
         if (
           e.key === "F12" ||
-          (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J" || e.key === "C")) ||
+          (e.ctrlKey &&
+            e.shiftKey &&
+            (e.key === "I" || e.key === "J" || e.key === "C")) ||
           (e.ctrlKey && (e.key === "U" || e.key === "S" || e.key === "P"))
         ) {
           e.preventDefault();
-          alert('Akses DevTools atau shortcut browser tidak diizinkan!'); // Optional: Berikan pesan
+          alert("Akses DevTools atau shortcut browser tidak diizinkan!"); // Optional: Berikan pesan
         }
       });
-    
+
       // Deteksi DevTools (Console) - Metode yang Lebih Baik
       function detectDevTool(allow) {
-        if(isNaN(allow)) allow = 100;
+        if (isNaN(allow)) allow = 100;
         var start = +new Date();
         debugger;
         var end = +new Date();
-        if(isNaN(start) || isNaN(end) || end - start > allow) {
-          document.body.innerHTML = "<h3 style='text-align:center;color:red;'>Inspeksi tidak diperbolehkan!</h3>";
+        if (isNaN(start) || isNaN(end) || end - start > allow) {
+          document.body.innerHTML =
+            "<h3 style='text-align:center;color:red;'>Inspeksi tidak diperbolehkan!</h3>";
           // Opsional: Redirect ke halaman lain atau lakukan tindakan lain
           // window.location.href = "https://example.com/forbidden";
         }
       }
-    
+
       // Jalankan deteksi secara berkala
       setInterval(detectDevTool, 1000);
-    
     </script>
 
     <!-- ======= Mobile nav toggle button ======= -->
@@ -167,9 +168,7 @@
             >
           </li>
           <li>
-            <a href="#skills"
-              ><i class="bx bi-gear"></i> <span>Skill</span></a
-            >
+            <a href="#skills"><i class="bx bi-gear"></i> <span>Skill</span></a>
           </li>
           <li>
             <a href="#projects"
@@ -183,7 +182,7 @@
           </li>
           <li>
             <a href="#"
-              ><i class="bx bx-download" ></i> <span>Download CV</span></a
+              ><i class="bx bx-download"></i> <span>Download CV</span></a
             >
           </li>
         </ul>
@@ -206,61 +205,72 @@
     </section>
   -->
 
-  <section class="jumbotron text-center" id="home">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-5 mb-4 mb-lg-0" data-aos="zoom-in" data-aos-duration="1000">
-          <img class="rounded-circle img-fluid w-50" src="img/photo.png" alt="Profile Picture">
-        </div>
-        <div class="col-lg-7" data-aos="fade-left" data-aos-duration="1000">
-          <h1 class="display-4">Marco Sihombing</h1>
-          <p class="lead" id="text">Junior Programmer</p>
-          <nav class="nav justify-content-center">
-            <a class="nav-link" href="#about">About</a>
-            <a class="nav-link" href="#resume">Resume</a>
-            <a class="nav-link" href="#skills">Skills</a>
-            <a class="nav-link" href="#projects">Projects</a>
-            <a class="nav-link" href="#contact">Contact</a>
-            <a class="nav-link" href="#">Download CV</a>
-          </nav>
+    <section class="jumbotron text-center" id="home">
+      <div class="container">
+        <div class="row align-items-center">
+          <div
+            class="col-lg-5 mb-4 mb-lg-0"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          >
+            <img
+              class="rounded-circle img-fluid w-50"
+              src="img/photo.png"
+              alt="Profile Picture"
+            />
+          </div>
+          <div class="col-lg-7" data-aos="fade-left" data-aos-duration="1000">
+            <h1 class="display-4">Marco Sihombing</h1>
+            <p class="lead" id="text">Junior Programmer</p>
+            <nav class="nav justify-content-center">
+              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#resume">Resume</a>
+              <a class="nav-link" href="#skills">Skills</a>
+              <a class="nav-link" href="#projects">Projects</a>
+              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="#">Download CV</a>
+            </nav>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  
-  <style>
-    @media (max-width: 768px) {
-      img.rounded-circle {
-        max-width: 150px; /* Batasi ukuran gambar */
-        height: auto;
+    </section>
+
+    <style>
+      @media (max-width: 768px) {
+        img.rounded-circle {
+          max-width: 150px; /* Batasi ukuran gambar */
+          height: auto;
+        }
       }
-    }
-  </style>
-  
-  <script>
-    var texts = [
-      "Junior Programmer",
-      "Entry-level programmer",
-      "Junior software developer",
-      "Aspiring programmer",
-      "Developing programmer",
-      "Trainee programmer",
-      "Fresh Graduated",
-    ];
-    var index = 0;
-    function changeText() {
-      var element = document.getElementById("text");
-      element.innerHTML = texts[index];
-      index = (index + 1) % texts.length;
-    }
-    setInterval(changeText, 3000);
-  </script>
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    </style>
+
+    <script>
+      var texts = [
+        "Junior Programmer",
+        "Entry-level programmer",
+        "Junior software developer",
+        "Aspiring programmer",
+        "Developing programmer",
+        "Trainee programmer",
+        "Fresh Graduated",
+      ];
+      var index = 0;
+      function changeText() {
+        var element = document.getElementById("text");
+        element.innerHTML = texts[index];
+        index = (index + 1) % texts.length;
+      }
+      setInterval(changeText, 3000);
+    </script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- end jumbotron -->
 
     <!--
@@ -454,151 +464,153 @@
       });
     </script>
 
-<style>
-  /* Resume Section */
-  #resume, #skills {
-    background-color: #f8f9fa;
-    padding: 50px 0; /* Kurangi padding untuk layar kecil */
-    text-align: center;
-  }
+    <style>
+      /* Resume Section */
+      #resume,
+      #skills {
+        background-color: #f8f9fa;
+        padding: 50px 0; /* Kurangi padding untuk layar kecil */
+        text-align: center;
+      }
 
-  .job-item {
-    margin-bottom: 20px;
-    padding: 20px;
-    border: 1px solid #dee2e6;
-    border-radius: 10px;
-    transition: background-color 0.3s ease;
-  }
+      .job-item {
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 1px solid #dee2e6;
+        border-radius: 10px;
+        transition: background-color 0.3s ease;
+      }
 
-  .job-item:hover {
-    background-color: #e2e6ea;
-  }
+      .job-item:hover {
+        background-color: #e2e6ea;
+      }
 
-  .job-title {
-    font-size: 20px;
-    font-weight: bold;
-  }
+      .job-title {
+        font-size: 20px;
+        font-weight: bold;
+      }
 
-  .job-details {
-    font-size: 14px;
-  }
+      .job-details {
+        font-size: 14px;
+      }
 
-  .job-icon {
-    font-size: 30px;
-    margin-bottom: 10px;
-    color: #007bff;
-  }
+      .job-icon {
+        font-size: 30px;
+        margin-bottom: 10px;
+        color: #007bff;
+      }
 
-  /* Skills Section */
-  .skill-item {
-    margin-bottom: 20px;
-  }
+      /* Skills Section */
+      .skill-item {
+        margin-bottom: 20px;
+      }
 
-  .skill-icon {
-    font-size: 40px;
-    margin-bottom: 5px;
-  }
+      .skill-icon {
+        font-size: 40px;
+        margin-bottom: 5px;
+      }
 
-  /* Responsiveness */
-  @media (max-width: 768px) {
-    #resume, #skills {
-      padding: 40px 0;
-    }
+      /* Responsiveness */
+      @media (max-width: 768px) {
+        #resume,
+        #skills {
+          padding: 40px 0;
+        }
 
-    .job-title {
-      font-size: 18px;
-    }
+        .job-title {
+          font-size: 18px;
+        }
 
-    .job-details {
-      font-size: 13px;
-    }
+        .job-details {
+          font-size: 13px;
+        }
 
-    .job-icon {
-      font-size: 28px;
-    }
+        .job-icon {
+          font-size: 28px;
+        }
 
-    .skill-icon {
-      font-size: 36px;
-    }
-  }
-</style>
+        .skill-icon {
+          font-size: 36px;
+        }
+      }
+    </style>
 
-<section id="resume">
-  <div class="container">
-    <h2 class="mb-4" data-aos="fade-up">Resume</h2>
-    <div class="row justify-content-center">
-      <div class="col-md-8">
-        <div class="job-item" data-aos="fade-up">
-          <i class="fas fa-laptop-code job-icon"></i>
-          <p class="job-title">Software Developer</p>
-          <p class="job-details">
-            Company: ABC Tech<br>
-            Duration: Jan 2020 - Present<br>
-            Position: Full-time Employee
-          </p>
+    <section id="resume">
+      <div class="container">
+        <h2 class="mb-4" data-aos="fade-up">Resume</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="job-item" data-aos="fade-up">
+              <i class="fas fa-laptop-code job-icon"></i>
+              <p class="job-title">Software Developer</p>
+              <p class="job-details">
+                Company: ABC Tech<br />
+                Duration: Jan 2020 - Present<br />
+                Position: Full-time Employee
+              </p>
+            </div>
+            <div class="job-item" data-aos="fade-up" data-aos-delay="100">
+              <i class="fas fa-briefcase job-icon"></i>
+              <p class="job-title">Intern</p>
+              <p class="job-details">
+                Company: XYZ Internship<br />
+                Duration: May 2019 - Aug 2019<br />
+                Position: Intern
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="job-item" data-aos="fade-up" data-aos-delay="100">
-          <i class="fas fa-briefcase job-icon"></i>
-          <p class="job-title">Intern</p>
-          <p class="job-details">
-            Company: XYZ Internship<br>
-            Duration: May 2019 - Aug 2019<br>
-            Position: Intern
-          </p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2 class="mb-4" data-aos="fade-up">Skills</h2>
+        <div class="row justify-content-center">
+          <div class="col-6 col-md-4 skill-item" data-aos="fade-right">
+            <span class="display-4 text-primary">
+              <i class="fab fa-html5"></i>
+            </span>
+            <p>HTML5</p>
+          </div>
+          <div class="col-6 col-md-4 skill-item" data-aos="fade-up">
+            <span class="display-4 text-primary">
+              <i class="fab fa-css3"></i>
+            </span>
+            <p>CSS</p>
+          </div>
+          <div class="col-6 col-md-4 skill-item" data-aos="fade-left">
+            <span class="display-4 text-primary">
+              <i class="fab fa-js"></i>
+            </span>
+            <p>JavaScript</p>
+          </div>
+          <div class="col-6 col-md-4 skill-item" data-aos="fade-right">
+            <span class="display-4 text-primary">
+              <i class="fab fa-python"></i>
+            </span>
+            <p>Python</p>
+          </div>
+          <div class="col-6 col-md-4 skill-item" data-aos="fade-up">
+            <span class="display-4 text-primary">
+              <i class="fas fa-code"></i>
+            </span>
+            <p>C</p>
+          </div>
+          <div class="col-6 col-md-4 skill-item" data-aos="fade-left">
+            <span class="display-4 text-primary">
+              <i class="fas fa-code-branch"></i>
+            </span>
+            <p>Github</p>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section id="skills">
-  <div class="container">
-    <h2 class="mb-4" data-aos="fade-up">Skills</h2>
-    <div class="row justify-content-center">
-      <div class="col-6 col-md-4 skill-item" data-aos="fade-right">
-        <span class="display-4 text-primary">
-          <i class="fab fa-html5"></i>
-        </span>
-        <p>HTML5</p>
-      </div>
-      <div class="col-6 col-md-4 skill-item" data-aos="fade-up">
-        <span class="display-4 text-primary">
-          <i class="fab fa-css3"></i>
-        </span>
-        <p>CSS</p>
-      </div>
-      <div class="col-6 col-md-4 skill-item" data-aos="fade-left">
-        <span class="display-4 text-primary">
-          <i class="fab fa-js"></i>
-        </span>
-        <p>JavaScript</p>
-      </div>
-      <div class="col-6 col-md-4 skill-item" data-aos="fade-right">
-        <span class="display-4 text-primary">
-          <i class="fab fa-python"></i>
-        </span>
-        <p>Python</p>
-      </div>
-      <div class="col-6 col-md-4 skill-item" data-aos="fade-up">
-        <span class="display-4 text-primary">
-          <i class="fas fa-code"></i>
-        </span>
-        <p>C</p>
-      </div>
-      <div class="col-6 col-md-4 skill-item" data-aos="fade-left">
-        <span class="display-4 text-primary">
-          <i class="fas fa-code-branch"></i>
-        </span>
-        <p>Github</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <!--skill-->
 
@@ -679,100 +691,107 @@
     </section>
   -->
 
-  <style>
-    #projects {
-      background-color: #f8f9fa;
-      padding: 80px 0;
-      text-align: center;
-    }
+    <style>
+      #projects {
+        background-color: #f8f9fa;
+        padding: 80px 0;
+        text-align: center;
+      }
 
-    .card {
-      transition: transform 0.3s ease-in-out;
-    }
+      .card {
+        transition: transform 0.3s ease-in-out;
+      }
 
-    .card:hover {
-      transform: scale(1.05);
-    }
+      .card:hover {
+        transform: scale(1.05);
+      }
 
-    .card-img-top {
-      border-radius: 10px 10px 0 0;
-    }
+      .card-img-top {
+        border-radius: 10px 10px 0 0;
+      }
 
-    .card-body {
-      border-radius: 0 0 10px 10px;
-    }
-  </style>
-  <section id="projects">
-    <div class="container">
-      <div class="row text-center mb-3">
-        <div class="col">
-          <h2 data-aos="fade-up">My Projects</h2>
+      .card-body {
+        border-radius: 0 0 10px 10px;
+      }
+    </style>
+    <section id="projects">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2 data-aos="fade-up">My Projects</h2>
+          </div>
+        </div>
+
+        <div class="row justify-content-center" id="project-cards">
+          <div class="col-md-4 mb-3" data-aos="flip-left">
+            <div class="card">
+              <a href="#"
+                ><img src="img/projects/1.png" class="card-img-top" alt="..."
+              /></a>
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3" data-aos="flip-up" data-aos-delay="100">
+            <div class="card">
+              <img src="img/projects/2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3" data-aos="flip-right" data-aos-delay="200">
+            <div class="card">
+              <img src="img/projects/3.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3" data-aos="flip-down" data-aos-delay="300">
+            <div class="card">
+              <img src="img/projects/4.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3" data-aos="flip-left" data-aos-delay="400">
+            <div class="card">
+              <img src="img/projects/5.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="row justify-content-center" id="project-cards">
-        <div class="col-md-4 mb-3" data-aos="flip-left">
-          <div class="card">
-            <a href="#"><img src="img/projects/1.png" class="card-img-top" alt="..." /></a>
-            <div class="card-body">
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of the card's content.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 mb-3" data-aos="flip-up" data-aos-delay="100">
-          <div class="card">
-            <img src="img/projects/2.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of the card's content.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 mb-3" data-aos="flip-right" data-aos-delay="200">
-          <div class="card">
-            <img src="img/projects/3.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of the card's content.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 mb-3" data-aos="flip-down" data-aos-delay="300">
-          <div class="card">
-            <img src="img/projects/4.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of the card's content.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 mb-3" data-aos="flip-left" data-aos-delay="400">
-          <div class="card">
-            <img src="img/projects/5.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of the card's content.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- End Projects -->
 
     <!-- Contact -->
@@ -788,22 +807,49 @@
             <form id="frm_contact" action="email.php" method="POST">
               <div class="mb-3" data-aos="fade-right">
                 <label for="fullname" class="form-label"> Name </label>
-                <input type="text" name="name" class="form-control" id="name" aria-describedby="name" required />
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  id="name"
+                  aria-describedby="name"
+                  required
+                />
               </div>
               <div class="mb-3" data-aos="fade-left">
                 <label for="email" class="form-label"> Email </label>
-                <input type="email" name="email" class="form-control" id="email" aria-describedby="email" required />
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="email"
+                  required
+                />
               </div>
               <div class="mb-3" data-aos="fade-right">
                 <label for="message" class="form-label"> Message </label>
-                <textarea class="form-control" name="message" id="message" rows="3" required></textarea>
+                <textarea
+                  class="form-control"
+                  name="message"
+                  id="message"
+                  rows="3"
+                  required
+                ></textarea>
               </div>
-              <button type="submit" class="btn btn-primary" id="btn_submit" data-aos="fade-up">Send</button>
+              <button
+                type="submit"
+                class="btn btn-primary"
+                id="btn_submit"
+                data-aos="fade-up"
+              >
+                Send
+              </button>
             </form>
           </div>
         </div>
       </div>
-    </section>    
+    </section>
 
     <!-- end Contact -->
 
@@ -817,107 +863,142 @@
             limitations get in the way"
           </p>
         </div>
+
         <div class="social-links">
-          <a href="https://api.whatsapp.com/send?phone=+628123456789&text=Hai" class="whatsapp" target="_blank">
-            <i class="bx bxl-whatsapp"></i>
-          </a>
-          <a href="#" class="facebook" target="_blank">
-            <i class="bx bxl-facebook"></i>
-          </a>
-          <a href="#" class="instagram" target="_blank">
-            <i class="bx bxl-instagram"></i>
-          </a>
-          <a href="#" class="youtube" target="_blank">
-            <i class="bx bxl-youtube"></i>
-          </a>
-          <a href="#" class="github" target="_blank">
-            <i class="bx bxl-github"></i>
-          </a>
+          <a
+            href="https://api.whatsapp.com/send?phone=+628123456789&text=Hai"
+            class="whatsapp"
+            target="_blank"
+            ><i class="bx bxl-whatsapp"></i
+          ></a>
+          <a href="#" class="facebook" target="_blank"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+          <a href="#" class="instagram" target="_blank"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a href="#" class="youtube" target="_blank"
+            ><i class="bx bxl-youtube"></i
+          ></a>
+          <a href="#" class="github" target="_blank"
+            ><i class="bx bxl-github"></i
+          ></a>
         </div>
+
         <div class="copyright">
-          Copyright &copy; <strong><span>Marco Sihombing</span></strong>
-          <span id="currentYear"></span>.
-          <script type="text/javascript">
-            var year = new Date().getFullYear();
-            document.getElementById("currentYear").innerHTML = year;
-          </script>
-        </div>
+          &copy; <span id="currentYear"></span>
+          All Rights Reserved.
         </div>
       </div>
-    </footer>    
+    </footer>
+
+    <script>
+      // Menampilkan tahun otomatis
+      document.getElementById("currentYear").innerText =
+        new Date().getFullYear();
+    </script>
     <!-- End Footer -->
 
     <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
     <nav class="nav-mobile">
       <ul>
-        <li><a href="#home"><i class="bx bx-home"></i></a></li>
-        <li><a href="#about"><i class="bx bx-user"></i></a></li>
-        <li><a href="#resume"><i class="bx bx-file-blank"></i></a></li>
-        <li><a href="#skills"><i class="bx bi-gear"></i></a></li>
-        <li><a href="#projects"><i class="bx bx-book-content"></i></a></li>
-        <li><a href="#contact"><i class="bx bx-envelope"></i></a></li>
-        <li><a href="#"><i class="bx bx-download"></i></a></li>
+        <li>
+          <a href="#home"><i class="bx bx-home"></i></a>
+        </li>
+        <li>
+          <a href="#about"><i class="bx bx-user"></i></a>
+        </li>
+        <li>
+          <a href="#resume"><i class="bx bx-file-blank"></i></a>
+        </li>
+        <li>
+          <a href="#skills"><i class="bx bi-gear"></i></a>
+        </li>
+        <li>
+          <a href="#projects"><i class="bx bx-book-content"></i></a>
+        </li>
+        <li>
+          <a href="#contact"><i class="bx bx-envelope"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="bx bx-download"></i></a>
+        </li>
       </ul>
     </nav>
-    
+
     <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
     <style>
       /* Navbar mobile */
-.nav-mobile {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  background-color: rgba(6, 99, 186, 0.5); /* Background biru #0663ba dengan transparansi */
-  z-index: 10;
-}
+      .nav-mobile {
+        display: none;
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        background-color: rgba(
+          6,
+          99,
+          186,
+          0.5
+        ); /* Background biru #0663ba dengan transparansi */
+        z-index: 10;
+      }
 
-.nav-mobile ul {
-  display: flex;
-  justify-content: space-around;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
+      .nav-mobile ul {
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
 
-.nav-mobile li a {
-  color: #fff;
-  display: block;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-}
+      .nav-mobile li a {
+        color: #fff;
+        display: block;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+      }
 
-/* Style for back-to-top button */
-.back-to-top {
-  position: fixed;
-  bottom: 80px;
-  right: 20px;
-  background-color: rgba(6, 99, 186, 0.5); /* Background biru #0663ba dengan transparansi */
-  color: #fff;
-  border-radius: 50%;
-  padding: 10px;
-  font-size: 24px;
-  display: none;
-  z-index: 20;
-}
+      /* Style for back-to-top button */
+      .back-to-top {
+        position: fixed;
+        bottom: 80px;
+        right: 20px;
+        background-color: rgba(
+          6,
+          99,
+          186,
+          0.5
+        ); /* Background biru #0663ba dengan transparansi */
+        color: #fff;
+        border-radius: 50%;
+        padding: 10px;
+        font-size: 24px;
+        display: none;
+        z-index: 20;
+      }
 
-.back-to-top:hover {
-  background-color: rgba(6, 99, 186, 0.7); /* Warna biru lebih pekat saat hover */
-}
+      .back-to-top:hover {
+        background-color: rgba(
+          6,
+          99,
+          186,
+          0.7
+        ); /* Warna biru lebih pekat saat hover */
+      }
 
-/* Show the navbar and button on mobile */
-@media (max-width: 768px) {
-  .nav-mobile {
-    display: block;
-  }
+      /* Show the navbar and button on mobile */
+      @media (max-width: 768px) {
+        .nav-mobile {
+          display: block;
+        }
 
-  .back-to-top {
-    display: block;
-  }
-}
+        .back-to-top {
+          display: block;
+        }
+      }
     </style>
 
     <!-- Bootstrap Bundle with Popper -->
@@ -928,7 +1009,10 @@
     ></script>
     <script src="./js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js"
+    ></script>
 
     <!-- Vendor JS Files -->
     <script
@@ -955,253 +1039,252 @@
     <!-- Template Main JS File -->
     <script type="text/javascript">
       !(function ($) {
-          "use strict";
-  
-          // Preloader
-          $(window).on("load", function () {
-              if ($("#preloader").length) {
-                  $("#preloader")
-                      .delay(100)
-                      .fadeOut("fast", function () {
-                          $(this).remove();
-                      });
-              }
-          });
-  
-          // Hero typed
-          if ($(".typed").length) {
-              var typed_strings = $(".typed").data("typed-items");
-              typed_strings = typed_strings.split(",");
-              new Typed(".typed", {
-                  strings: typed_strings,
-                  loop: true,
-                  typeSpeed: 100,
-                  backSpeed: 50,
-                  backDelay: 2000,
+        "use strict";
+
+        // Preloader
+        $(window).on("load", function () {
+          if ($("#preloader").length) {
+            $("#preloader")
+              .delay(100)
+              .fadeOut("fast", function () {
+                $(this).remove();
               });
           }
-  
-          // Smooth scroll for the navigation menu and links with .scrollto classes
-          $(document).on("click", ".nav-menu a, .scrollto", function (e) {
-              if (
-                  location.pathname.replace(/^\//, "") ==
-                  this.pathname.replace(/^\//, "") &&
-                  location.hostname == this.hostname
-              ) {
-                  var target = $(this.hash);
-                  if (target.length) {
-                      e.preventDefault();
-  
-                      var scrollto = target.offset().top;
-  
-                      $("html, body").animate(
-                          {
-                              scrollTop: scrollto,
-                          },
-                          1500,
-                          "easeInOutExpo"
-                      );
-  
-                      if ($(this).parents(".nav-menu, .mobile-nav").length) {
-                          $(".nav-menu .active, .mobile-nav .active").removeClass(
-                              "active"
-                          );
-                          $(this).closest("li").addClass("active");
-                      }
-  
-                      if ($("body").hasClass("mobile-nav-active")) {
-                          $("body").removeClass("mobile-nav-active");
-                          $(".mobile-nav-toggle i").toggleClass(
-                              "icofont-navigation-menu icofont-close"
-                          );
-                      }
-                      return false;
-                  }
-              }
+        });
+
+        // Hero typed
+        if ($(".typed").length) {
+          var typed_strings = $(".typed").data("typed-items");
+          typed_strings = typed_strings.split(",");
+          new Typed(".typed", {
+            strings: typed_strings,
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 50,
+            backDelay: 2000,
           });
-  
-          // Activate smooth scroll on page load with hash links in the url
-          $(document).ready(function () {
-              if (window.location.hash) {
-                  var initial_nav = window.location.hash;
-                  if ($(initial_nav).length) {
-                      var scrollto = $(initial_nav).offset().top;
-                      $("html, body").animate(
-                          {
-                              scrollTop: scrollto,
-                          },
-                          1500,
-                          "easeInOutExpo"
-                      );
-                  }
-              }
-          });
-  
-          $(document).on("click", ".mobile-nav-toggle", function (e) {
-              $("body").toggleClass("mobile-nav-active");
-              $(".mobile-nav-toggle i").toggleClass(
-                  "icofont-navigation-menu icofont-close"
-              );
-          });
-  
-          $(document).click(function (e) {
-              var container = $(".mobile-nav-toggle");
-              if (!container.is(e.target) && container.has(e.target).length === 0) {
-                  if ($("body").hasClass("mobile-nav-active")) {
-                      $("body").removeClass("mobile-nav-active");
-                      $(".mobile-nav-toggle i").toggleClass(
-                          "icofont-navigation-menu icofont-close"
-                      );
-                  }
-              }
-          });
-  
-          // Navigation active state on scroll
-          var nav_sections = $("section");
-          var main_nav = $(".nav-menu, #mobile-nav");
-  
-          $(window).on("scroll", function () {
-              var cur_pos = $(this).scrollTop() + 300;
-  
-              nav_sections.each(function () {
-                  var top = $(this).offset().top,
-                      bottom = top + $(this).outerHeight();
-  
-                  if (cur_pos >= top && cur_pos <= bottom) {
-                      if (cur_pos <= bottom) {
-                          main_nav.find("li").removeClass("active");
-                      }
-                      main_nav
-                          .find('a[href="#' + $(this).attr("id") + '"]')
-                          .parent("li")
-                          .addClass("active");
-                  }
-                  if (cur_pos < 200) {
-                      $(".nav-menu ul:first li:first").addClass("active");
-                  }
-              });
-          });
-  
-          // Back to top button
-          $(window).scroll(function () {
-              if ($(this).scrollTop() > 100) {
-                  $(".back-to-top").fadeIn("fast");
-              } else {
-                  $(".back-to-top").fadeOut("fast");
-              }
-          });
-  
-          $(".back-to-top").click(function () {
+        }
+
+        // Smooth scroll for the navigation menu and links with .scrollto classes
+        $(document).on("click", ".nav-menu a, .scrollto", function (e) {
+          if (
+            location.pathname.replace(/^\//, "") ==
+              this.pathname.replace(/^\//, "") &&
+            location.hostname == this.hostname
+          ) {
+            var target = $(this.hash);
+            if (target.length) {
+              e.preventDefault();
+
+              var scrollto = target.offset().top;
+
               $("html, body").animate(
-                  {
-                      scrollTop: 0,
-                  },
-                  1500,
-                  "easeInOutExpo"
+                {
+                  scrollTop: scrollto,
+                },
+                1500,
+                "easeInOutExpo"
               );
+
+              if ($(this).parents(".nav-menu, .mobile-nav").length) {
+                $(".nav-menu .active, .mobile-nav .active").removeClass(
+                  "active"
+                );
+                $(this).closest("li").addClass("active");
+              }
+
+              if ($("body").hasClass("mobile-nav-active")) {
+                $("body").removeClass("mobile-nav-active");
+                $(".mobile-nav-toggle i").toggleClass(
+                  "icofont-navigation-menu icofont-close"
+                );
+              }
               return false;
-          });
-  
-          // jQuery counterUp
-          $('[data-toggle="counter-up"]').counterUp({
-              delay: 10,
-              time: 1000,
-          });
-  
-          // Init AOS
-          function aos_init() {
-              AOS.init({
-                  duration: 1000,
-                  once: true,
-              });
+            }
           }
-  
-          // Portfolio isotope and filter
-          $(window).on("load", function () {
-              var portfolioIsotope = $(".portfolio-container").isotope({
-                  itemSelector: ".portfolio-item",
-              });
-  
-              $("#portfolio-flters li").on("click", function () {
-                  $("#portfolio-flters li").removeClass("filter-active");
-                  $(this).addClass("filter-active");
-  
-                  portfolioIsotope.isotope({
-                      filter: $(this).data("filter"),
-                  });
-                  aos_init();
-              });
-  
-              // Initiate venobox (lightbox feature used in portofilo)
-              $(".venobox").venobox({
-                  share: false,
-              });
-  
-              // Initiate aos_init() function
-              aos_init();
-          });
-  
-          // Testimonials carousel (uses the Owl Carousel library)
-          $(".testimonials-carousel").owlCarousel({
-              autoplay: true,
-              dots: true,
-              loop: true,
-              items: 1,
-          });
-  
-          // Portfolio details carousel
-          $(".portfolio-details-carousel").owlCarousel({
-              autoplay: true,
-              dots: true,
-              loop: true,
-              items: 1,
-          });
-  
-          // Owl carousel for generic carousel
-          $(".owl-carousel").owlCarousel({
-              loop: true,
-              margin: 20,
-              nav: false,
-              autoplay: true,
-              autoplayTimeout: 3000,
-              autoplayHoverPause: true,
-              responsive: {
-                  0: {
-                      items: 1,
-                  },
-                  600: {
-                      items: 3,
-                  },
-                  1000: {
-                      items: 3,
-                  },
-              },
-          });
-  
-          // Disable right mouse click
-          function clickIE4(event) {
-              if (event.button == 2) {
-                  return false;
+        });
+
+        // Activate smooth scroll on page load with hash links in the url
+        $(document).ready(function () {
+          if (window.location.hash) {
+            var initial_nav = window.location.hash;
+            if ($(initial_nav).length) {
+              var scrollto = $(initial_nav).offset().top;
+              $("html, body").animate(
+                {
+                  scrollTop: scrollto,
+                },
+                1500,
+                "easeInOutExpo"
+              );
+            }
+          }
+        });
+
+        $(document).on("click", ".mobile-nav-toggle", function (e) {
+          $("body").toggleClass("mobile-nav-active");
+          $(".mobile-nav-toggle i").toggleClass(
+            "icofont-navigation-menu icofont-close"
+          );
+        });
+
+        $(document).click(function (e) {
+          var container = $(".mobile-nav-toggle");
+          if (!container.is(e.target) && container.has(e.target).length === 0) {
+            if ($("body").hasClass("mobile-nav-active")) {
+              $("body").removeClass("mobile-nav-active");
+              $(".mobile-nav-toggle i").toggleClass(
+                "icofont-navigation-menu icofont-close"
+              );
+            }
+          }
+        });
+
+        // Navigation active state on scroll
+        var nav_sections = $("section");
+        var main_nav = $(".nav-menu, #mobile-nav");
+
+        $(window).on("scroll", function () {
+          var cur_pos = $(this).scrollTop() + 300;
+
+          nav_sections.each(function () {
+            var top = $(this).offset().top,
+              bottom = top + $(this).outerHeight();
+
+            if (cur_pos >= top && cur_pos <= bottom) {
+              if (cur_pos <= bottom) {
+                main_nav.find("li").removeClass("active");
               }
+              main_nav
+                .find('a[href="#' + $(this).attr("id") + '"]')
+                .parent("li")
+                .addClass("active");
+            }
+            if (cur_pos < 200) {
+              $(".nav-menu ul:first li:first").addClass("active");
+            }
+          });
+        });
+
+        // Back to top button
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+            $(".back-to-top").fadeIn("fast");
+          } else {
+            $(".back-to-top").fadeOut("fast");
           }
-  
-          function clickNS4(e) {
-              if (document.layers || (document.getElementById && !document.all)) {
-                  if (e.which == 2 || e.which == 3) {
-                      return false;
-                  }
-              }
+        });
+
+        $(".back-to-top").click(function () {
+          $("html, body").animate(
+            {
+              scrollTop: 0,
+            },
+            1500,
+            "easeInOutExpo"
+          );
+          return false;
+        });
+
+        // jQuery counterUp
+        $('[data-toggle="counter-up"]').counterUp({
+          delay: 10,
+          time: 1000,
+        });
+
+        // Init AOS
+        function aos_init() {
+          AOS.init({
+            duration: 1000,
+            once: true,
+          });
+        }
+
+        // Portfolio isotope and filter
+        $(window).on("load", function () {
+          var portfolioIsotope = $(".portfolio-container").isotope({
+            itemSelector: ".portfolio-item",
+          });
+
+          $("#portfolio-flters li").on("click", function () {
+            $("#portfolio-flters li").removeClass("filter-active");
+            $(this).addClass("filter-active");
+
+            portfolioIsotope.isotope({
+              filter: $(this).data("filter"),
+            });
+            aos_init();
+          });
+
+          // Initiate venobox (lightbox feature used in portofilo)
+          $(".venobox").venobox({
+            share: false,
+          });
+
+          // Initiate aos_init() function
+          aos_init();
+        });
+
+        // Testimonials carousel (uses the Owl Carousel library)
+        $(".testimonials-carousel").owlCarousel({
+          autoplay: true,
+          dots: true,
+          loop: true,
+          items: 1,
+        });
+
+        // Portfolio details carousel
+        $(".portfolio-details-carousel").owlCarousel({
+          autoplay: true,
+          dots: true,
+          loop: true,
+          items: 1,
+        });
+
+        // Owl carousel for generic carousel
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 20,
+          nav: false,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          autoplayHoverPause: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 3,
+            },
+            1000: {
+              items: 3,
+            },
+          },
+        });
+
+        // Disable right mouse click
+        function clickIE4(event) {
+          if (event.button == 2) {
+            return false;
           }
-  
-          if (document.layers) {
-              document.captureEvents(Event.MOUSEDOWN);
-              document.onmousedown = clickNS4;
-          } else if (document.all && !document.getElementById) {
-              document.onmousedown = clickIE4;
+        }
+
+        function clickNS4(e) {
+          if (document.layers || (document.getElementById && !document.all)) {
+            if (e.which == 2 || e.which == 3) {
+              return false;
+            }
           }
-          document.oncontextmenu = new Function("return false");
+        }
+
+        if (document.layers) {
+          document.captureEvents(Event.MOUSEDOWN);
+          document.onmousedown = clickNS4;
+        } else if (document.all && !document.getElementById) {
+          document.onmousedown = clickIE4;
+        }
+        document.oncontextmenu = new Function("return false");
       })(jQuery);
-  </script>
-  
+    </script>
   </body>
 </html>
