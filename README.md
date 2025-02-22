@@ -49,6 +49,13 @@ Saya selalu antusias mempelajari teknologi baru dan mencari tantangan yang dapat
 
 ---
 
+## 🚀 Visitor Count
+<p align="center">
+    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/japri099&title=Visitors" alt="Visitor Count" />
+</p>
+
+---
+
 ## 💬 Connect with Me
 <p align="center">
     <a href="https://github.com/japri099" target="_blank">
@@ -62,3 +69,7 @@ Saya selalu antusias mempelajari teknologi baru dan mencari tantangan yang dapat
 ---
 
 ![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=japri099&theme=react-dark)
+
+---
+
+![Snake animation](https://github.com/japri099/japri099/blob/output/github-contribution-grid-snake.svg)
