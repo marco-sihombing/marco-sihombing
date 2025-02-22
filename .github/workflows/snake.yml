@@ -2,8 +2,11 @@ name: Generate Snake Contribution Animation
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Jalankan setiap hari
-  workflow_dispatch:
+    - cron: "0 0 * * *" # Jalankan setiap hari (midnight UTC)
+  push:
+    branches:
+      - main # Jalankan setiap kali ada perubahan di branch utama
+  workflow_dispatch: # Memungkinkan jalankan secara manual
 
 jobs:
   generate:
@@ -16,10 +19,10 @@ jobs:
         uses: Platane/snk@v3
         with:
           github_user_name: "japri099"
-          outputs: "github-contribution-grid-snake.svg"
+          outputs: "dist/github-contribution-grid-snake.svg"
 
       - name: Push generated files
         uses: actions/upload-artifact@v3
         with:
           name: snake-animation
-          path: github-contribution-grid-snake.svg
+          path: dist/github-contribution-grid-snake.svg
