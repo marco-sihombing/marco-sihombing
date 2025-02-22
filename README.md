@@ -64,4 +64,4 @@ Saya selalu antusias mempelajari teknologi baru dan mencari tantangan yang dapat
 
 ---
 
-![Snake animation](https://github.com/japri099/japri099/blob/output/github-contribution-grid-snake.svg)
+<img src="https://raw.githubusercontent.com/japri099/japri099/output/snake.svg" alt="Snake animation" />
