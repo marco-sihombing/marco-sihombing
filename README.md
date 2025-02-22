@@ -48,6 +48,11 @@ Saya selalu antusias mempelajari teknologi baru dan mencari tantangan yang dapat
 </p>
 
 ---
+## 🚀 Visitor Count
+<p align="center">
+    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/japri099&title=Visitors"alt="Visitor Count" />
+</p>
+---
 
 ## 💬 Connect with Me
 <p align="center">
