@@ -60,7 +60,6 @@ Saya selalu antusias mempelajari teknologi baru dan mencari tantangan yang dapat
     <a href="https://www.instagram.com/japr1_in/" target="_blank">
         <img src="https://img.shields.io/badge/instagram-%23000000.svg?&style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
     </a>
-    <img src="https://komarev.com/ghpvc/?username=john&style=flat-square"/>
 </p>
 
 ---
