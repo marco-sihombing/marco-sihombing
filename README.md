@@ -2,8 +2,8 @@
     <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnRqMDg1YTJzeWYxNWJ6NGRrZG94M25wdDg3amNjZGRzMXdtdTJndyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Qn74oPyaKYBpVWdA7t/giphy.gif" alt="Meme GIF" />
 </p>
 
-### 👋 Hi, I'm Marco!
-#### 🚀 Backend Developer | Machine Learning Enthusiast | Data Mining Explorer  
+### <img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h1571l0uucg205k05egri.gif" width="25"> Hi There, I'm Marco!
+#### 🚀 Backend Developer | Machine Learning Enthusiast | Data Mining Explorer
 
 ---
 
@@ -47,7 +47,7 @@ Saya selalu antusias mempelajari teknologi baru dan mencari tantangan yang dapat
 
 ## 🚀 Visitor Count
 <p align="center">
-    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/japri099&title=Visitors" alt="Visitor Count" />
+    <img src="https://komarev.com/ghpvc/?username=japri099&style=flat-square"/>
 </p>
 
 ---
@@ -60,6 +60,7 @@ Saya selalu antusias mempelajari teknologi baru dan mencari tantangan yang dapat
     <a href="https://www.instagram.com/japr1_in/" target="_blank">
         <img src="https://img.shields.io/badge/instagram-%23000000.svg?&style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
     </a>
+    <img src="https://komarev.com/ghpvc/?username=john&style=flat-square"/>
 </p>
 
 ---
