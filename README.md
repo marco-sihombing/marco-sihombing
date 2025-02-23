@@ -1,4 +1,8 @@
-### 👋 Hi, I'm Marco!  
+<p align="center">
+    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnRqMDg1YTJzeWYxNWJ6NGRrZG94M25wdDg3amNjZGRzMXdtdTJndyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Qn74oPyaKYBpVWdA7t/giphy.gif" alt="Meme GIF" />
+</p>
+
+### 👋 Hi, I'm Marco!
 #### 🚀 Backend Developer | Machine Learning Enthusiast | Data Mining Explorer  
 
 ---
