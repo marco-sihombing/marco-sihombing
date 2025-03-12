@@ -1167,26 +1167,42 @@
         });
 
         // Back to top button
-        $(window).scroll(function () {
-          if ($(this).scrollTop() > 100) {
-            $(".back-to-top").fadeIn("fast");
-          } else {
-            $(".back-to-top").fadeOut("fast");
+        // Throttle scroll event untuk performa lebih stabil
+        let scrollTimeout;
+        $(window).on("scroll", function () {
+          if (!scrollTimeout) {
+            scrollTimeout = setTimeout(function () {
+              scrollTimeout = null;
+              if ($(window).scrollTop() > 100) {
+                $(".back-to-top").fadeIn(300); // lebih smooth dari "fast"
+              } else {
+                $(".back-to-top").fadeOut(300);
+              }
+            }, 100); // throttle interval (100ms cukup responsif)
           }
         });
 
-        $(".back-to-top").click(function () {
-          $("html, body").animate(
+        // Click handler untuk scroll ke atas lebih smooth dan cepat
+        $(".back-to-top").click(function (e) {
+          e.preventDefault();
+          $("html, body").stop().animate(
             {
               scrollTop: 0,
             },
-            1500,
-            "easeInOutExpo"
+            800, // lebih cepat dari 1500ms
+            "easeInOutCubic" // easing function lebih smooth & stabil
           );
-          return false;
         });
 
-        // jQuery counterUp
+        // Custom easing: easeInOutCubic (lebih smooth dari easeInOutExpo)
+        $.easing.easeInOutCubic = function (x, t, b, c, d) {
+          t /= d / 2;
+          if (t < 1) return (c / 2) * t * t * t + b;
+          t -= 2;
+          return (c / 2) * (t * t * t + 2) + b;
+        };
+
+        // jQuery counterUp tetap seperti sebelumnya
         $('[data-toggle="counter-up"]').counterUp({
           delay: 10,
           time: 1000,
