@@ -10,7 +10,7 @@
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=F7D300&width=435&lines=Backend+Developer;Web+Development+Enthusiast;Machine+Learning+Explorer)](https://git.io/typing-svg)
 
-> "When my code works, I don't know why. When my code doesn't run, I don't know why, but when you ask me to explain the code, I don't know where to start... and suddenly I remember, I forgot to make coffee from the morning." ahh quotes
+> "Explaining legacy code is easy. First, you travel back in time and ask past-me what the hell I was thinking." ahh quotes
 
 Saya adalah seorang **Backend Developer** yang berfokus pada pengembangan aplikasi, manajemen database, serta optimalisasi performa sistem agar lebih efisien dan scalable. Dengan pemahaman dasar **frontend development**, saya dapat berkolaborasi dalam membangun aplikasi yang terintegrasi dengan baik. Selain itu, saya juga memiliki ketertarikan dalam **Machine Learning dan Data Mining**, yang memperkaya wawasan saya dalam mengolah data untuk menghasilkan insight yang bernilai.
 
@@ -39,6 +39,7 @@ Saya selalu antusias mempelajari teknologi baru dan mencari tantangan yang dapat
 ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+![NestJS](https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white)
 
 ### 📊 Data & Databases
 
@@ -46,18 +47,21 @@ Saya selalu antusias mempelajari teknologi baru dan mencari tantangan yang dapat
 ![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
+![Supabase](https://img.shields.io/badge/supabase-3ECF8E.svg?style=for-the-badge&logo=supabase&logoColor=white)
+
+### 📚 Data Science & ML
+
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
-
 ---
 
 ## 📊 GitHub Stats
 
 <div align="center">
-    <img src="https://github-readme-stats.vercel.app/api?username=japri099&theme=dark&hide_border=false&include_all_commits=true&count_private=true" alt="GitHub Stats" />
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=japri099&theme=dark&hide_border=false" alt="GitHub Streak" />
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=japri099&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact" alt="Top Languages" />
+    <img src="https://github-readme-stats.vercel.app/api?username=marco-sihombing&theme=dark&hide_border=false&include_all_commits=true&count_private=true" alt="GitHub Stats" />
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=marco-sihombing&theme=dark&hide_border=false" alt="GitHub Streak" />
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=marco-sihombing&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact" alt="Top Languages" />
 </div>
 
 ---
@@ -65,7 +69,7 @@ Saya selalu antusias mempelajari teknologi baru dan mencari tantangan yang dapat
 ## 🏆 GitHub Trophies
 
 <p align="center">
-    <img src="https://github-profile-trophy.vercel.app/?username=japri099&theme=radical&no-frame=false&no-bg=false&margin-w=4" alt="GitHub Trophies" />
+    <img src="https://github-profile-trophy.vercel.app/?username=marco-sihombing&theme=radical&no-frame=false&no-bg=false&margin-w=4" alt="GitHub Trophies" />
 </p>
 
 ---
@@ -73,7 +77,7 @@ Saya selalu antusias mempelajari teknologi baru dan mencari tantangan yang dapat
 ## 🔝 Top Contributed Repo
 
 <p align="center">
-    <img src="https://github-contributor-stats.vercel.app/api?username=japri099&limit=5&theme=dark&combine_all_yearly_contributions=true" alt="Top Contributed Repos" />
+    <img src="https://github-contributor-stats.vercel.app/api?username=marco-sihombing&limit=5&theme=dark&combine_all_yearly_contributions=true" alt="Top Contributed Repos" />
 </p>
 
 ---
@@ -81,7 +85,7 @@ Saya selalu antusias mempelajari teknologi baru dan mencari tantangan yang dapat
 ## 🚀 Visitor Count
 
 <p align="center">
-    <img src="https://komarev.com/ghpvc/?username=japri099&style=flat-square"/>
+    <img src="https://komarev.com/ghpvc/?username=marco-sihombing&style=flat-square"/>
 </p>
 
 ---
@@ -89,7 +93,7 @@ Saya selalu antusias mempelajari teknologi baru dan mencari tantangan yang dapat
 ## 💬 Connect with Me
 
 <p align="center">
-    <a href="https://github.com/japri099" target="_blank">
+    <a href="https://github.com/marco-sihombing" target="_blank">
         <img src="https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
     </a>
     <a href="https://www.instagram.com/japr1_in/" target="_blank">
@@ -99,8 +103,8 @@ Saya selalu antusias mempelajari teknologi baru dan mencari tantangan yang dapat
 
 ---
 
-![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=japri099&theme=react-dark)
+![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=marco-sihombing&theme=react-dark)
 
 ---
 
-<img src="https://raw.githubusercontent.com/japri099/japri099/output/snake.svg" alt="Snake animation" />
+<img src="https://raw.githubusercontent.com/marco-sihombing/marco-sihombing/output/snake.svg" alt="Snake animation" />
