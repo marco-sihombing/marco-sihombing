@@ -85,9 +85,9 @@ Saya selalu antusias mempelajari teknologi baru dan mencari tantangan yang dapat
 ## 📊 GitHub Stats
 
 <div align="center">
-    <img src="https://github-readme-stats.vercel.app/api?username=marco-sihombing&theme=dark&hide_border=false&include_all_commits=true&count_private=true" alt="GitHub Stats" />
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=marco-sihombing&theme=dark&hide_border=false" alt="GitHub Streak" />
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=marco-sihombing&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact" alt="Top Languages" />
+    <img src="https://github-readme-stats.vercel.app/api?username=marco-sihombing&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false" height="150" alt="stats graph"  />
+    <img src="https://github-readme-stats.vercel.app/api/top-langs?username=marco-sihombing&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" height="150" alt="languages graph"  />
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=marco-sihombing&theme=dracula&hide_border=false" alt="GitHub Streak" />
 </div>
 
 ---
@@ -134,3 +134,11 @@ Saya selalu antusias mempelajari teknologi baru dan mencari tantangan yang dapat
 ---
 
 <img src="https://raw.githubusercontent.com/marco-sihombing/marco-sihombing/output/snake.svg" alt="Snake animation" />
+
+---
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/marco-sihombing/marco-sihombing/output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/marco-sihombing/marco-sihombing/output/pacman-contribution-graph.svg">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/marco-sihombing/marco-sihombing/output/pacman-contribution-graph.svg">
+</picture>
