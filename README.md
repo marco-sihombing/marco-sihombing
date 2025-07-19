@@ -12,9 +12,9 @@
 
 > "Explaining legacy code is easy. First, you travel back in time and ask past-me what the hell I was thinking." ahh quotes
 
-Saya adalah seorang **Backend Developer** yang berfokus pada pengembangan aplikasi, manajemen database, serta optimalisasi performa sistem agar lebih efisien dan scalable. Dengan pemahaman dasar **frontend development**, saya dapat berkolaborasi dalam membangun aplikasi yang terintegrasi dengan baik. Selain itu, saya juga memiliki ketertarikan dalam **Machine Learning dan Data Mining**, yang memperkaya wawasan saya dalam mengolah data untuk menghasilkan insight yang bernilai.
+I am a **Backend Developer** who focuses on application development, database management, and optimizing system performance to be more efficient and scalable. With a basic understanding of **frontend development**, I can collaborate in building well-integrated applications. In addition, I also have an interest in **Machine Learning and Data Mining**, which enriches my knowledge in processing data to produce valuable insights.
 
-Saya selalu antusias mempelajari teknologi baru dan mencari tantangan yang dapat meningkatkan kemampuan saya. Dengan pendekatan yang analitis dan solusi yang inovatif, saya siap berkontribusi dalam tim pengembangan untuk menciptakan sistem yang handal dan berkinerja tinggi.
+I am always enthusiastic to learn new technologies and look for challenges that can improve my skills. With an analytical approach and innovative solutions, I am ready to contribute to the development team to create reliable and high-performance systems.
 
 ### 🌐 Let's build something great together!
 
