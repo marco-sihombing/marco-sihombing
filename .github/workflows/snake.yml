@@ -1,12 +1,12 @@
-name: Generate Snake Animation
+name: Generate snake animation
 
 on:
-  schedule:
-    - cron: "* */12 * * *"
+  schedule: # Execute every 12 hours
+    - cron: '0 */12 * * *'
   workflow_dispatch:
   push:
     branches:
-    - master
+      - master
 
 jobs:
   generate:
@@ -16,24 +16,15 @@ jobs:
     timeout-minutes: 5
 
     steps:
-      - name: Generate snake.svg with dynamic colors
+      - name: Generate dark and light snake.svg
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
-          outputs: dist/snake.svg?palette=github-light&dynamic=true
+          outputs: |
+            dist/snake-dark.svg?palette=github-dark
+            dist/snake-light.svg?palette=github-light
 
-      - name: Add custom animation and style to snake.svg
-        run: |
-          sed -i 's/#000000/#8e44ad/g' dist/snake.svg # Snake color: purple
-          sed -i 's/#ffffff/#ecf0f1/g' dist/snake.svg # Background: light gray
-
-          sed -i '/<svg>/a <style> .snake { animation: moveSnake 6s ease-in-out infinite, colorPulse 4s infinite alternate, glowingEffect 1s infinite alternate; } @keyframes moveSnake { 0% { transform: translateX(0); opacity: 1; } 50% { transform: translateX(50%); opacity: 0.6; } 100% { transform: translateX(100%); opacity: 1; } } @keyframes colorPulse { 0% { stroke: #8e44ad; } 50% { stroke: #3498db; } 100% { stroke: #f39c12; } } @keyframes glowingEffect { 0% { filter: drop-shadow(0px 0px 20px #8e44ad); } 100% { filter: drop-shadow(0px 0px 25px #f39c12); } } </style>' dist/snake.svg
-
-          sed -i '/<svg>/a <style> .tail { animation: tailMove 8s ease-in-out infinite, tailGlow 2s infinite alternate; } @keyframes tailMove { 0% { transform: rotate(0deg); } 50% { transform: rotate(30deg); } 100% { transform: rotate(0deg); } } @keyframes tailGlow { 0% { filter: drop-shadow(0px 0px 10px #8e44ad); } 100% { filter: drop-shadow(0px 0px 30px #3498db); } } </style>' dist/snake.svg
-
-          sed -i '/<svg>/a <style> .snake { transform-origin: 50% 50%; animation: rotateSnake 8s ease-in-out infinite, snakePulse 2s infinite alternate; } @keyframes rotateSnake { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } } @keyframes snakePulse { 0% { transform: scale(1); } 100% { transform: scale(1.1); } } </style>' dist/snake.svg
-
-      - name: Push snake.svg to the output branch
+      - name: Push snake SVGs to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
