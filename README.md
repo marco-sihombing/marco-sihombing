@@ -6,7 +6,8 @@
 
 #### 🚀 Backend Developer | Machine Learning Enthusiast | Data Mining Explorer
 
----
+<p  align="center"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></p>
+<!-- --- -->
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=F7D300&width=435&lines=Backend+Developer;Web+Development+Enthusiast;Machine+Learning+Explorer)](https://git.io/typing-svg)
 
@@ -18,7 +19,8 @@ I am always enthusiastic to learn new technologies and look for challenges that 
 
 ### 🌐 Let's build something great together!
 
----
+<p  align="center"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></p>
+<!-- --- -->
 
 ## 💻 Tech Stack
 
@@ -80,7 +82,9 @@ I am always enthusiastic to learn new technologies and look for challenges that 
 ![OpenStreetMap](https://img.shields.io/badge/OpenStreetMap-Maps-7EBC6F?style=for-the-badge&logo=openstreetmap&logoColor=white)
 ![OpenSky Network](https://img.shields.io/badge/OpenSky-Network-0057b7?style=for-the-badge)
 ![Supabase](https://img.shields.io/badge/Supabase-Auth%20%26%20Storage-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
----
+
+<p  align="center"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></p>
+<!-- --- -->
 
 ## 📊 GitHub Stats
 
@@ -90,7 +94,8 @@ I am always enthusiastic to learn new technologies and look for challenges that 
     <img src="https://github-readme-streak-stats.herokuapp.com/?user=marco-sihombing&theme=dracula&hide_border=false" alt="GitHub Streak" />
 </div>
 
----
+<p  align="center"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></p>
+<!-- --- -->
 
 ## 🏆 GitHub Trophies
 
@@ -98,7 +103,8 @@ I am always enthusiastic to learn new technologies and look for challenges that 
     <img src="https://github-profile-trophy.vercel.app/?username=marco-sihombing&theme=radical&no-frame=false&no-bg=false&margin-w=4" alt="GitHub Trophies" />
 </p>
 
----
+<p  align="center"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></p>
+<!-- --- -->
 
 ## 🔝 Top Contributed Repo
 
@@ -106,7 +112,8 @@ I am always enthusiastic to learn new technologies and look for challenges that 
     <img src="https://github-contributor-stats.vercel.app/api?username=marco-sihombing&limit=5&theme=dark&combine_all_yearly_contributions=true" alt="Top Contributed Repos" />
 </p>
 
----
+<p  align="center"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></p>
+<!-- --- -->
 
 ## 🚀 Visitor Count
 
@@ -114,7 +121,8 @@ I am always enthusiastic to learn new technologies and look for challenges that 
     <img src="https://komarev.com/ghpvc/?username=marco-sihombing&style=flat-square"/>
 </p>
 
----
+<p  align="center"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></p>
+<!-- --- -->
 
 ## 💬 Connect with Me
 
@@ -127,15 +135,18 @@ I am always enthusiastic to learn new technologies and look for challenges that 
     </a>
 </p>
 
----
+<p  align="center"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></p>
+<!-- --- -->
 
 ![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=marco-sihombing&theme=react-dark)
 
----
+<p  align="center"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></p>
+<!-- --- -->
 
 <img src="https://raw.githubusercontent.com/marco-sihombing/marco-sihombing/output/snake.svg" alt="Snake animation" />
 
----
+<p  align="center"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></p>
+<!-- --- -->
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/marco-sihombing/marco-sihombing/output/pacman-contribution-graph-dark.svg">
