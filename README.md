@@ -13,9 +13,9 @@
 
 > "Explaining legacy code is easy. First, you travel back in time and ask past-me what the hell I was thinking." ahh quotes
 
-I am a **Backend Developer** who focuses on application development, database management, and optimizing system performance to be more efficient and scalable. With a basic understanding of **frontend development**, I can collaborate in building well-integrated applications. In addition, I also have an interest in **Machine Learning and Data Mining**, which enriches my knowledge in processing data to produce valuable insights.
+I am a **Backend-Focused Full-Stack Developer** with a primary focus on backend application development, database management, API development, and system performance optimization to build efficient, reliable, and scalable systems. I also have hands-on experience in **frontend development using Next.js and TypeScript**, allowing me to develop and integrate applications across the full stack while maintaining my primary focus on backend development.
 
-I am always enthusiastic to learn new technologies and look for challenges that can improve my skills. With an analytical approach and innovative solutions, I am ready to contribute to the development team to create reliable and high-performance systems.
+I am also interested in **Machine Learning and Data Mining**, which allows me to explore data processing and analytical approaches to gain valuable insights. I am always enthusiastic about learning new technologies and taking on challenges that help me improve my technical skills. With an analytical mindset and a problem-solving approach, I aim to contribute to development teams by building reliable and well-integrated applications.
 
 ### 🌐 Let's build something great together!
 
